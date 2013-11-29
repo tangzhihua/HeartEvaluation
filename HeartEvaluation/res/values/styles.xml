@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Activity的界面风格 -->
+    <style name="ActivityTheme" parent="@android:style/Theme.Light.NoTitleBar" />
+
+    <!-- View弹出时的动画, 用于弹出列表时的动画 -->
+    <style name="PopupAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_out</item>
+    </style>
+
+    <!-- 系统设置->设备信息碎片 界面中的文字 -->
+    <style name="TextStyleForSettingActivityDeviceInfoFragment" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#ff4978ac</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 问卷导航界面, 具体 问卷 按钮 -->
+    <style name="ButtonStyleForQuestionnaireNavigationGridViewFragment" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/selector_button_bg_of_questionnaire_navigation_grid_view</item>
+        <item name="android:layout_height">71dip</item>
+        <item name="android:layout_width">320dip</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!--  -->
+    <style name="text_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+</resources>

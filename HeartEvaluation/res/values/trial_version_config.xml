@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 这里标示当前版本是否是 试用版本 -->
+    <bool name="is_trial_bersion">true</bool>
+
+    <!-- 这里可以设置, 在设置版本时, 可以给用户使用的量表 -->
+    <string-array name="trial_version_config">
+        <item>SCL_90</item>
+        <item>SAS</item>
+        <item>SDS</item>
+        <item>MMPI</item>
+        <item>Y_BOCS</item>
+        <item>LSAS</item>
+        <item>HAMA</item>
+        <item>HAMD</item>
+        <item>BPRS</item>
+        <item>EPQ-成人</item>
+    </string-array>
+
+</resources>

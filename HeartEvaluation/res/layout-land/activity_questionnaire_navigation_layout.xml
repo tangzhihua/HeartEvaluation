@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_choosepage"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/navigation_button_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- 主菜单 -->
+
+        <RadioButton
+            android:id="@+id/back_to_main_activity_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_back_to_main_activity_radio_button_bg_of_questionnaire_navigation"
+            android:button="@null" >
+        </RadioButton>
+
+        <!-- 常用测试 -->
+
+        <RadioButton
+            android:id="@+id/common_test_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_common_test_button_bgradio_button_bg_of_questionnaire_navigation"
+            android:button="@null" >
+        </RadioButton>
+
+        <!-- 人格类测试 -->
+
+        <RadioButton
+            android:id="@+id/personality_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_personality_radio_button_bg_of_questionnaire_navigation"
+            android:button="@null" >
+        </RadioButton>
+
+        <!-- 儿童及老人 -->
+
+        <RadioButton
+            android:id="@+id/children_elderly_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_children_elderly_radio_button_bg_of_questionnaire_navigation"
+            android:button="@null" >
+        </RadioButton>
+
+        <!-- 精神类测试 -->
+
+        <RadioButton
+            android:id="@+id/mental_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_mental_radio_button_bg_of_questionnaire_navigation"
+            android:button="@null" >
+        </RadioButton>
+
+        <!-- 情绪/应激类测试 -->
+
+        <RadioButton
+            android:id="@+id/emotional_stress_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_emotional_stress_radio_button_bg_of_questionnaire_navigation"
+            android:button="@null" >
+        </RadioButton>
+
+        <!-- 家庭生活类 -->
+
+        <RadioButton
+            android:id="@+id/family_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_family_radio_button_bg_of_questionnaire_navigation"
+            android:button="@null" >
+        </RadioButton>
+
+        <!-- 综合测试类 -->
+
+        <RadioButton
+            android:id="@+id/comprehensive_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_comprehensive_radio_button_bg_of_questionnaire_navigation"
+            android:button="@null" >
+        </RadioButton>
+
+        <!-- 其他测试 -->
+
+        <RadioButton
+            android:id="@+id/other_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_other_radio_button_bg_of_questionnaire_navigation"
+            android:button="@null" >
+        </RadioButton>
+
+        <!-- 自定义常用测试 -->
+
+        <RadioButton
+            android:id="@+id/user_defined_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_user_defined_radio_button_bg_of_questionnaire_navigation"
+            android:button="@null" >
+        </RadioButton>
+    </RadioGroup>
+
+    <!-- 碎片容器 -->
+
+    <LinearLayout
+        android:id="@+id/fragment_container_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

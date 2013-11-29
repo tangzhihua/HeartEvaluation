@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="TextHighlighted">#FFFF8C00</color>
+    <color name="TextLinked">#FF4682B4</color>
+    <color name="TextNormal">#FF696969</color>
+    <color name="TextGray">#FFDCDCDC</color>
+    <color name="TextPromptInfo">#ff996633</color>
+    <color name="TextColorOfTwoDimensionalTable">#ff4978ac</color>
+    <color name="ColorOfTwoDimensionalTableVerticalLine">#ff1a66b7</color>
+    <color name="ColorOfTwoDimensionalTableHorizontalLine">#ffa1bee0</color>
+
+</resources>

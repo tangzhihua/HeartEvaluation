@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 网络信息展示区域 -->
+
+    <!-- 问卷 GridView -->
+
+    <GridView
+        android:id="@+id/questionnaire_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/net_info_with_wifi_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:padding="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <include
+        android:id="@+id/net_info_with_wifi_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        layout="@layout/net_info_with_wifi_layout"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

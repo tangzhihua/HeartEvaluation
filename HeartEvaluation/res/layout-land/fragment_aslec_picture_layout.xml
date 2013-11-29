@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/answer_fragment_bg"
+    android:orientation="vertical" >
+
+    <!-- TitleBar -->
+
+    <cn.skyduck.custom_control.answer_title.AnswerTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/question_title_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/answer_button_radioGroup1"
+            android:layout_below="@id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp" />
+                <!-- 未发生过 -->
+
+                <RadioButton
+                    android:id="@+id/never_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="未发生过"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/right_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_answer"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 没有 -->
+
+                    <RadioButton
+                        android:id="@+id/no_radioButton"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_radiobutton_bg_of_blue"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="没有"
+                        android:textSize="35sp" />
+                    <!-- 轻度 -->
+
+                    <RadioButton
+                        android:id="@+id/mild_radioButton"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_radiobutton_bg_of_blue"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="轻度"
+                        android:textSize="35sp" />
+                    <!-- 中度 -->
+
+                    <RadioButton
+                        android:id="@+id/moderate_radioButton"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_radiobutton_bg_of_blue"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="中度"
+                        android:textSize="35sp" />
+                    <!-- 重度 -->
+
+                    <RadioButton
+                        android:id="@+id/severe_radioButton"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_radiobutton_bg_of_blue"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="重度"
+                        android:textSize="35sp" />
+                    <!-- 极重 -->
+
+                    <RadioButton
+                        android:id="@+id/heavy_radioButton"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_radiobutton_bg_of_blue"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="极重"
+                        android:textSize="35sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

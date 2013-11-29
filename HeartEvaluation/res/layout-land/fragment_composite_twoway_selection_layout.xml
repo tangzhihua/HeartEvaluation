@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/answer_fragment_bg"
+    android:orientation="vertical" >
+
+    <!-- TitleBar -->
+
+    <cn.skyduck.custom_control.answer_title.AnswerTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <!-- 问题标题 -->
+
+        <TextView
+            android:id="@+id/question_title_textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:singleLine="false"
+            android:text="18.对不太熟悉的人表达不同的观点和看法"
+            android:textColor="@android:color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <!-- 答题提示1 -->
+
+        <TextView
+            android:id="@+id/prompt_textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="害怕/焦虑(根据主管体验回答)"
+            android:textColor="@color/TextPromptInfo"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <!-- 答案按钮1 害怕/焦虑 -->
+
+        <RadioGroup
+            android:id="@+id/answer_button_radioGroup1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal" >
+
+            <!-- 无 -->
+
+            <RadioButton
+                android:id="@+id/no_radioButton"
+                android:layout_width="160dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radiobutton_bg_of_blue"
+                android:button="@null"
+                android:gravity="center"
+                android:text="无"
+                android:textSize="38sp" />
+            <!-- 轻度 -->
+
+            <RadioButton
+                android:id="@+id/mild_radioButton"
+                android:layout_width="160dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radiobutton_bg_of_blue"
+                android:button="@null"
+                android:gravity="center"
+                android:text="轻度"
+                android:textSize="38sp" />
+            <!-- 中度 -->
+
+            <RadioButton
+                android:id="@+id/moderate_radioButton"
+                android:layout_width="160dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radiobutton_bg_of_blue"
+                android:button="@null"
+                android:gravity="center"
+                android:text="中度"
+                android:textSize="38sp" />
+            <!-- 重度 -->
+
+            <RadioButton
+                android:id="@+id/severe_radioButton"
+                android:layout_width="160dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radiobutton_bg_of_blue"
+                android:button="@null"
+                android:gravity="center"
+                android:text="重度"
+                android:textSize="38sp" />
+        </RadioGroup>
+        <!-- 答题提示2 回避程度 -->
+
+        <TextView
+            android:id="@+id/prompt_textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:singleLine="false"
+            android:text="回避程度(根据客观事实回答)"
+            android:textColor="@color/TextPromptInfo"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <!-- 答案按钮1 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/part_one_radioGroup2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- 从未回避 -->
+
+                <RadioButton
+                    android:id="@+id/never_shy_away_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:gravity="left|center_vertical"
+                    android:text="  A.从未回避(0%)"
+                    android:textSize="38sp" />
+                <!-- 偶尔回避 -->
+
+                <RadioButton
+                    android:id="@+id/occasionally_avoided_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:gravity="left|center_vertical"
+                    android:text="  B.偶尔回避(1-33%)"
+                    android:textSize="38sp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/part_two_radioGroup2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- 时常回避 -->
+
+                <RadioButton
+                    android:id="@+id/often_avoided_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:gravity="left|center_vertical"
+                    android:text="  C.时常回避(34-67%)"
+                    android:textSize="38sp" />
+                <!-- 经常回避 -->
+
+                <RadioButton
+                    android:id="@+id/frequently_avoided_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:gravity="left|center_vertical"
+                    android:text="  D.经常回避(68-100%)"
+                    android:textSize="38sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

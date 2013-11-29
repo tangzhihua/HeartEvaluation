@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/answer_fragment_bg"
+    android:orientation="vertical" >
+
+    <!-- TitleBar -->
+
+    <cn.skyduck.custom_control.answer_title.AnswerTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 问题标题 -->
+
+            <TextView
+                android:id="@+id/question_title_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="30、有没有进食的不正常"
+                android:textColor="#ff000000"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/answer_button_radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <!-- 选项 1 -->
+
+                <RadioButton
+                    android:id="@+id/option_one_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:text="从来没有"
+                    android:textSize="38sp" />
+
+                <!-- 选项 2 -->
+
+                <RadioButton
+                    android:id="@+id/option_two_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:text="轻微或有时有"
+                    android:textSize="38sp" />
+
+                <!-- 选项 3 -->
+
+                <RadioButton
+                    android:id="@+id/option_three_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:text="程度严重或经常出现"
+                    android:textSize="38sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="如果有，请选择 : "
+                android:textColor="#ff000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- 第二组 单选按钮 -->
+
+            <LinearLayout
+                android:id="@+id/part_two_answer_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="900dip"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_checkbox_bg_style_one"
+                        android:text="备选答案 1"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="20dip"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_checkbox_bg_style_one"
+                        android:text="备选答案 2"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="20dip"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_checkbox_bg_style_one"
+                        android:text="备选答案 3"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <!-- 输入框问题提示 -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="其它，请描述"
+                    android:textColor="@color/TextPromptInfo"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!-- 输入框 -->
+
+                <EditText
+                    android:id="@+id/input_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginTop="20dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/ok_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/selector_radiobutton_bg_of_blue"
+                        android:text="确定"
+                        android:textSize="38sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

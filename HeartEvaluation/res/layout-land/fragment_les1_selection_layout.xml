@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/answer_fragment_bg"
+    android:orientation="vertical" >
+
+    <!-- TitleBar -->
+
+    <cn.skyduck.custom_control.answer_title.AnswerTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <!-- 问题标题 -->
+
+        <TextView
+            android:id="@+id/question_title_textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:singleLine="false"
+            android:text="1、恋爱或订婚"
+            android:textColor="#ff000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <!-- 发生时间 -->
+
+        <TextView
+            android:id="@+id/prompt_textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="发生时间："
+            android:textColor="@color/TextPromptInfo"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <!-- 发生时间 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/part_one_radioGroup1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- 未发生 -->
+
+                <RadioButton
+                    android:id="@+id/never_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="未发生"
+                    android:textSize="38sp" />
+                <!-- 1年内 -->
+
+                <RadioButton
+                    android:id="@+id/under_year_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="1年内"
+                    android:textSize="38sp" />
+                <!-- 1年前 -->
+
+                <RadioButton
+                    android:id="@+id/more_year_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="1年前"
+                    android:textSize="38sp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/part_two_radioGroup1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- 发生时间较早，但影响深远至今 -->
+
+                <RadioButton
+                    android:id="@+id/earlier_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="发生时间较早，但影响深远至今"
+                    android:textSize="38sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <!-- 次数 -->
+
+        <TextView
+            android:id="@+id/prompt_textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:singleLine="false"
+            android:text="次数:"
+            android:textColor="@color/TextPromptInfo"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <!-- 答案按钮1 -->
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- 1次 -->
+
+            <RadioButton
+                android:id="@+id/once_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radiobutton_bg_of_blue"
+                android:button="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="1次"
+                android:textSize="38sp" />
+            <!-- 2次 -->
+
+            <RadioButton
+                android:id="@+id/twice_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radiobutton_bg_of_blue"
+                android:button="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="2次"
+                android:textSize="38sp" />
+
+            <!-- 3次以上 -->
+
+            <RadioButton
+                android:id="@+id/more_than_3_times_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radiobutton_bg_of_blue"
+                android:button="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="3次以上"
+                android:textSize="38sp" />
+            <!-- 经常回避 -->
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

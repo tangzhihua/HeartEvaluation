@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/answer_fragment_bg" >
+
+    <!-- TitleBar -->
+
+    <cn.skyduck.custom_control.answer_title.AnswerTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <!-- 确定 按钮 -->
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/selector_system_dialog_button_bg"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="28sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ok_button"
+        android:layout_below="@id/title_bar"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 问题标题 -->
+
+            <TextView
+                android:id="@+id/question_title_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="90dp"
+                android:singleLine="false"
+                android:text="对于未来的职业(或升学进修的专业)，您得早有考虑，它可能很抽象、很朦胧，也可能很具体、很清晰。不论是哪种情况，现在都请您把自己最想干的3种工作或最想读的3种专业，按顺序写下来。"
+                android:textColor="#ff000000"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+            <!-- 第一个输入框的布局 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <!-- 输入框问题提示 -->
+
+                <TextView
+                    android:id="@+id/input_title1_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="1."
+                    android:textColor="@color/TextPromptInfo"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!-- 输入框 -->
+
+                <EditText
+                    android:id="@+id/input1_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <!-- 第二个输入框的布局 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <!-- 输入框问题提示 -->
+
+                <TextView
+                    android:id="@+id/input_title2_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="2."
+                    android:textColor="@color/TextPromptInfo"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!-- 输入框 -->
+
+                <EditText
+                    android:id="@+id/input2_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <!-- 第三个输入框的布局 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <!-- 输入框问题提示 -->
+
+                <TextView
+                    android:id="@+id/input_title3_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="3."
+                    android:textColor="@color/TextPromptInfo"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!-- 输入框 -->
+
+                <EditText
+                    android:id="@+id/input3_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

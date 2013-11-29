@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_chaxun" >
+
+    <!-- 用户登录状态 -->
+
+    <TextView
+        android:id="@+id/user_login_state_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/user_login_state_test"
+        android:textColor="#FF00FF"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/filter_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="57dip"
+        android:layout_below="@id/user_login_state_textView"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- 全选 复选框 -->
+
+        <CheckBox
+            android:id="@+id/select_all_checkBox"
+            style="@style/TextStyleForSettingActivityDeviceInfoFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_checkbox_default_bg"
+            android:text="全选"
+            android:textSize="20sp" />
+
+        <!-- 时间范围 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="时间范围"
+            android:textColor="#ff1a66b7"
+            android:textSize="20sp" />
+
+        <!-- 开始时间 -->
+
+        <Button
+            android:id="@+id/begin_time_button"
+            android:layout_width="140dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/selector_button_bg_of_chaxun_date"
+            android:gravity="left|center_vertical"
+            android:text="0000-00-00"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:text="至"
+            android:textColor="#ff1a66b7"
+            android:textSize="20sp" />
+
+        <!-- 结束时间 -->
+
+        <Button
+            android:id="@+id/end_time_button"
+            android:layout_width="140dip"
+            android:layout_height="40dip"
+            android:background="@drawable/selector_button_bg_of_chaxun_date"
+            android:gravity="left|center_vertical"
+            android:text="0000-00-00"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <!-- 批量处理 -->
+
+        <Button
+            android:id="@+id/batch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_system_dialog_button_bg"
+            android:padding="3dp"
+            android:text="批量处理"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="卡号"
+            android:textColor="#ff1a66b7"
+            android:textSize="20sp" />
+
+        <!-- 卡号 -->
+        <!-- 要求 : 18个ASCII码 -->
+
+        <EditText
+            android:id="@+id/card_id_editText"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_button_bg_of_chaxun_name"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="姓名"
+            android:textColor="#ff1a66b7"
+            android:textSize="20sp" />
+
+        <!-- 姓名 -->
+
+        <EditText
+            android:id="@+id/name_editText"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_button_bg_of_chaxun_name"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <!-- 查询按钮 -->
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="90dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_button_bg_of_chaxun" />
+    </LinearLayout>
+
+    <!-- 问卷标题 -->
+
+    <include
+        android:id="@+id/questionnaire_listView_header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filter_layout"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        layout="@layout/listview_header_of_questionnaire" />
+
+    <!-- 问卷列表 -->
+
+    <ListView
+        android:id="@+id/questionnaire_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/questionnaire_listView_header_layout"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/ColorOfTwoDimensionalTableHorizontalLine"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/answer_fragment_bg" >
+
+    <!-- TitleBar -->
+
+    <cn.skyduck.custom_control.answer_title.AnswerTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:layout_marginTop="30dp"
+        android:gravity="center" >
+
+        <!-- 问题标题 -->
+
+        <TextView
+            android:id="@+id/question_title_textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginRight="270dp"
+            android:minHeight="80dp"
+            android:singleLine="false"
+            android:text="38．父母经常向我表述类似这样的话“这就是我们为你整日操劳而得到的报答吗？”"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- 父亲 选项 -->
+
+        <RadioGroup
+            android:id="@+id/left_question_radioGroup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="父亲"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/left_0_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_radiobutton_bg_of_gray"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="从不"
+                android:textColor="@drawable/selector_radiobutton_text_color_of_gray"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/left_1_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_radiobutton_bg_of_gray"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="偶尔"
+                android:textColor="@drawable/selector_radiobutton_text_color_of_gray"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/left_2_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_radiobutton_bg_of_gray"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="经常"
+                android:textColor="@drawable/selector_radiobutton_text_color_of_gray"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/left_3_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_radiobutton_bg_of_gray"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="总是"
+                android:textColor="@drawable/selector_radiobutton_text_color_of_gray"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/left_4_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_radiobutton_bg_of_gray"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="不合适选择"
+                android:textColor="@drawable/selector_radiobutton_text_color_of_gray"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <!-- 母亲 选项 -->
+
+        <RadioGroup
+            android:id="@+id/right_question_radioGroup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="母亲"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/right_0_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_radiobutton_bg_of_gray"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="从不"
+                android:textColor="@drawable/selector_radiobutton_text_color_of_gray"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/right_1_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_radiobutton_bg_of_gray"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="偶尔"
+                android:textColor="@drawable/selector_radiobutton_text_color_of_gray"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/right_2_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_radiobutton_bg_of_gray"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="经常"
+                android:textColor="@drawable/selector_radiobutton_text_color_of_gray"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/right_3_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_radiobutton_bg_of_gray"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="总是"
+                android:textColor="@drawable/selector_radiobutton_text_color_of_gray"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/right_4_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_radiobutton_bg_of_gray"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="不合适选择"
+                android:textColor="@drawable/selector_radiobutton_text_color_of_gray"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

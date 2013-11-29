@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/answer_activity_user_info_bg" >
+
+    <!-- 上一页 按钮 -->
+
+    <Button
+        android:id="@+id/page_previous_buton"
+        android:layout_width="160dip"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/selector_system_dialog_button_bg"
+        android:gravity="center"
+        android:text="上一页"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <!-- 确认并开始 按钮 -->
+
+    <Button
+        android:id="@+id/begin_answer_buton"
+        android:layout_width="200dip"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/selector_system_dialog_button_bg"
+        android:gravity="center"
+        android:text="确认并开始"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="960dp"
+        android:layout_height="390dp"
+        android:layout_marginBottom="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/instruction1_info_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="\t\t\t下表列出了有些人可能会有的病痛或问题，请仔细阅读每一条，然后根据最近一周来自己的实际感觉，选择最符合您的一种\n情况。"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/instruction2_info_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/instruction1_info_textView"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="@string/guidance2"
+                android:textColor="#ff996633"
+                android:textSize="30sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

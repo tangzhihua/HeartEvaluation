@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/preview_button_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/nomal_report_radioButton"
+                android:layout_width="160dip"
+                android:layout_height="55dp"
+                android:background="@drawable/selector_system_dialog_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="普通报告"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/detailed_report_radioButton"
+                android:layout_width="160dip"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/selector_system_dialog_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="详细报告"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/full_report_radioButton"
+                android:layout_width="160dip"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/selector_system_dialog_button_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="全面报告"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/print_button"
+            android:layout_width="160dip"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/selector_system_dialog_button_bg"
+            android:gravity="center"
+            android:text="打印"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/quit_button"
+            android:layout_width="160dip"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/selector_system_dialog_button_bg"
+            android:gravity="center"
+            android:text="退出预览"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/net_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/info_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="服务器连接中, 请稍等..."
+            android:textColor="@color/TextNormal"
+            android:textSize="38sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_layout"
+        android:layout_below="@id/net_info_layout"
+        android:padding="20dp" >
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/image_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

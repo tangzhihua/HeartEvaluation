@@ -1,0 +1,60 @@
+# view AndroidManifest.xml #generated:10
+-keep class cn.skyduck.activity.MyApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class cn.skyduck.activity.PreLoadedDataService { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class cn.skyduck.activity.activity.AnswerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class cn.skyduck.activity.activity.ContinueTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class cn.skyduck.activity.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class cn.skyduck.activity.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class cn.skyduck.activity.activity.PreviewReportActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class cn.skyduck.activity.activity.PrintReportActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class cn.skyduck.activity.activity.QuestionnaireNavigationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class cn.skyduck.activity.activity.SendToDoctorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class cn.skyduck.activity.activity.SystemSettingActivity { <init>(...); }
+
+# view land/res/layout-land/fragment_adl.xml #generated:9
+# view land/res/layout-land/fragment_aslec_picture_layout.xml #generated:10
+# view land/res/layout-land/fragment_bssd_picture_layout.xml #generated:10
+# view land/res/layout-land/fragment_composite_twoway_selection_layout.xml #generated:10
+# view land/res/layout-land/fragment_embu_part_one_page_one.xml #generated:9
+# view land/res/layout-land/fragment_embu_part_one_page_three.xml #generated:17
+# view land/res/layout-land/fragment_embu_part_one_page_two.xml #generated:9
+# view land/res/layout-land/fragment_embu_question_frame.xml #generated:9
+# view land/res/layout-land/fragment_hpii_part_five.xml #generated:9
+# view land/res/layout-land/fragment_hpii_part_one.xml #generated:9
+# view land/res/layout-land/fragment_hpii_part_six.xml #generated:9
+# view land/res/layout-land/fragment_input_and_single_one.xml #generated:9
+# view land/res/layout-land/fragment_input_one.xml #generated:9
+# view land/res/layout-land/fragment_les1_selection_layout.xml #generated:10
+# view land/res/layout-land/fragment_les2_selection_layout.xml #generated:10
+# view land/res/layout-land/fragment_picture_single_answer_layout.xml #generated:10
+# view land/res/layout-land/fragment_psqi_part_one_layout.xml #generated:10
+# view land/res/layout-land/fragment_rcbc_29.xml #generated:10
+# view land/res/layout-land/fragment_rcbc_30_31.xml #generated:10
+# view land/res/layout-land/fragment_single_answer.xml #generated:10
+# view land/res/layout-land/fragment_ssrs_10_and_11.xml #generated:10
+# view land/res/layout-land/fragment_transition_page.xml #generated:10
+-keep class cn.skyduck.custom_control.answer_title.AnswerTitleBar { <init>(...); }
+
+# view land/res/layout-land/activity_download_new_apk.xml #generated:11
+-keep class cn.skyduck.custom_control.titlebar.CustomTitleBar { <init>(...); }
+

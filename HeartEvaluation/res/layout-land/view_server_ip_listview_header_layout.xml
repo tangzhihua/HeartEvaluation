@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white" >
+
+    <!-- 科室名称 label -->
+
+    <TextView
+        android:id="@+id/offices_name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dp"
+        android:paddingLeft="25dp"
+        android:text="科室名称"
+        android:textColor="@color/Black"
+        android:textSize="24sp" />
+
+    <!-- 服务器IP地址 label -->
+
+    <TextView
+        android:id="@+id/server_ip_textView"
+        android:layout_width="230dp"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:text="服务器IP地址"
+        android:textColor="@color/Black"
+        android:textSize="24sp" />
+
+    <!-- 设置默认IP label -->
+
+    <TextView
+        android:id="@+id/default_ip_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="3dp"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:text="设为默认IP"
+        android:textColor="@color/Black"
+        android:textSize="24sp" />
+
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffe4f0fb" >
+
+    <!-- 横线 -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/ColorOfTwoDimensionalTableHorizontalLine" />
+
+    <!-- 分割线 -->
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/ColorOfTwoDimensionalTableVerticalLine" />
+
+    <RadioGroup
+        android:id="@+id/sort_button_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <!-- 量表名称 -->
+
+        <RadioButton
+            android:id="@+id/questionnaire_name_radioButton"
+            android:layout_width="130dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_continue_test_header_view_radiobutton_press_bg"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:text="测试试题"
+            android:textColor="@color/ColorOfTwoDimensionalTableVerticalLine"
+            android:textSize="20sp" />
+
+        <!-- 分割线 -->
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/ColorOfTwoDimensionalTableVerticalLine" />
+
+        <!-- 姓名 -->
+
+        <RadioButton
+            android:id="@+id/name_radioButton"
+            android:layout_width="160dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_continue_test_header_view_radiobutton_press_bg"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:text="姓名"
+            android:textColor="@color/TextColorOfTwoDimensionalTable"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- 分割线 -->
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/ColorOfTwoDimensionalTableVerticalLine" />
+
+        <!-- 性别 -->
+
+        <RadioButton
+            android:id="@+id/sex_radioButton"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_continue_test_header_view_radiobutton_press_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="性别"
+            android:textColor="@color/TextColorOfTwoDimensionalTable"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!-- 分割线 -->
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/ColorOfTwoDimensionalTableVerticalLine" />
+
+        <!-- 年龄 -->
+
+        <RadioButton
+            android:id="@+id/age_radioButton"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_continue_test_header_view_radiobutton_press_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="年龄"
+            android:textColor="@color/TextColorOfTwoDimensionalTable"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!-- 分割线 -->
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/ColorOfTwoDimensionalTableVerticalLine" />
+
+        <!-- 默认打印 -->
+
+        <RadioButton
+            android:id="@+id/default_print_radioButton"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_continue_test_header_view_radiobutton_press_bg"
+            android:button="@null"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="默认打印"
+            android:textColor="@color/TextColorOfTwoDimensionalTable"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!-- 分割线 -->
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/ColorOfTwoDimensionalTableVerticalLine" />
+
+        <!-- 开始时间 -->
+
+        <RadioButton
+            android:id="@+id/begin_time_radioButton"
+            android:layout_width="160dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_continue_test_header_view_radiobutton_press_bg"
+            android:button="@null"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="开始时间"
+            android:textColor="@color/TextColorOfTwoDimensionalTable"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!-- 分割线 -->
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/ColorOfTwoDimensionalTableVerticalLine" />
+
+        <!-- 卡号 -->
+
+        <RadioButton
+            android:id="@+id/card_number_radioButton"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_continue_test_header_view_radiobutton_press_bg"
+            android:button="@null"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="卡号"
+            android:textColor="@color/TextColorOfTwoDimensionalTable"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!-- 分割线 -->
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/ColorOfTwoDimensionalTableVerticalLine" />
+
+        <!-- 试卷状态 -->
+
+        <RadioButton
+            android:id="@+id/state_radioButton"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_continue_test_header_view_radiobutton_press_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="状态"
+            android:textColor="@color/TextColorOfTwoDimensionalTable"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/ColorOfTwoDimensionalTableVerticalLine" />
+
+    <!-- 横线 -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/sort_button_radioGroup"
+        android:background="@color/ColorOfTwoDimensionalTableHorizontalLine" />
+
+</RelativeLayout>

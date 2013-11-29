@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/answer_fragment_bg"
+    android:orientation="vertical" >
+
+    <!-- TitleBar -->
+
+    <cn.skyduck.custom_control.answer_title.AnswerTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 问题标题 -->
+
+            <TextView
+                android:id="@+id/question_title_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="老夫聊发少年狂，左牵黄，右擎苍。锦帽貂裘，千骑卷平冈。为报倾城随太守，亲射虎，看孙郎。 "
+                android:textColor="#ff000000"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/answer_button_radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <!-- 选项 1 -->
+
+                <RadioButton
+                    android:id="@+id/option_one_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:padding="10dp"
+                    android:text="(1) 无任何来源。"
+                    android:textSize="30sp" />
+                <!-- 选项 2 -->
+
+                <RadioButton
+                    android:id="@+id/option_two_radioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector_radiobutton_bg_of_blue"
+                    android:button="@null"
+                    android:padding="10dp"
+                    android:text="(2) 下列来源：(可选多项)"
+                    android:textSize="30sp" />
+            </RadioGroup>
+
+            <!--  -->
+
+            <LinearLayout
+                android:id="@+id/part_two_answer_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/check1"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40dip"
+                        android:enabled="false"
+                        android:text=" A、配偶"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <CheckBox
+                        android:id="@+id/check2"
+                        android:layout_width="300dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40dip"
+                        android:enabled="false"
+                        android:text=" B、其他家人"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <CheckBox
+                        android:id="@+id/check3"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40dip"
+                        android:enabled="false"
+                        android:text=" C、朋友"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/check4"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40dip"
+                        android:enabled="false"
+                        android:text=" D、亲戚"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <CheckBox
+                        android:id="@+id/check5"
+                        android:layout_width="300dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40dip"
+                        android:enabled="false"
+                        android:text=" E、同事"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <CheckBox
+                        android:id="@+id/check6"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40dip"
+                        android:enabled="false"
+                        android:text=" F、工作单位"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/check7"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40dip"
+                        android:enabled="false"
+                        android:text=" G、党团工会"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <CheckBox
+                        android:id="@+id/check8"
+                        android:layout_width="300dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40dip"
+                        android:enabled="false"
+                        android:text=" H、宗教、社会团体"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dip"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dip"
+                        android:text="I．其它来源 : "
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="(1)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <EditText
+                        android:id="@+id/input_1_editText"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="(2)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <EditText
+                        android:id="@+id/input_2_editText"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="(3)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <EditText
+                        android:id="@+id/input_3_editText"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="(4)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <EditText
+                        android:id="@+id/input_4_editText"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="(5)"
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp" />
+
+                    <EditText
+                        android:id="@+id/input_5_editText"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginTop="20dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/ok_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60sp"
+                        android:background="@drawable/selector_radiobutton_bg_of_blue"
+                        android:enabled="false"
+                        android:text="确定"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

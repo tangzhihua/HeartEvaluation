@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/answer_fragment_bg" >
+
+    <!-- TitleBar -->
+
+    <cn.skyduck.custom_control.answer_title.AnswerTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <!-- 确定 按钮 -->
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/selector_system_dialog_button_bg"
+        android:enabled="false"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="28sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ok_button"
+        android:layout_below="@id/title_bar"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 问题标题 -->
+
+            <TextView
+                android:id="@+id/question_title_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="90dp"
+                android:singleLine="false"
+                android:text="老夫聊发少年狂，左牵黄，右擎苍。锦帽貂裘，千骑卷平冈。为报倾城随太守，亲射虎，看孙郎。 "
+                android:textColor="#ff000000"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <!-- 单选答案组 -->
+
+            <RadioGroup
+                android:id="@+id/answer_button_radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </RadioGroup>
+
+            <!-- 输入框问题提示 -->
+
+            <TextView
+                android:id="@+id/input_title_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="您可以将其它影响睡眠的事情写在下面输入框中"
+                android:textColor="@color/TextPromptInfo"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- 输入框 -->
+
+            <EditText
+                android:id="@+id/input_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/answer_activity_user_info_bg" >
+
+    <LinearLayout
+        android:id="@+id/mark_view_for_show_poplist_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal" />
+
+    <!-- 退出检测 按钮 -->
+
+    <Button
+        android:id="@+id/quit_answer_buton"
+        android:layout_width="140dip"
+        android:layout_height="55dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_button_quit_answer_bg" />
+
+    <!-- 上一页 按钮 -->
+
+    <Button
+        android:id="@+id/page_previous_buton"
+        android:layout_width="160dip"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/selector_system_dialog_button_bg"
+        android:gravity="center"
+        android:text="上一页"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <!-- 下一页 按钮 -->
+
+    <Button
+        android:id="@+id/page_next_buton"
+        android:layout_width="160dip"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/selector_system_dialog_button_bg"
+        android:gravity="center"
+        android:text="下一页"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <!-- 测试者个人信息填写界面 -->
+
+    <LinearLayout
+        android:id="@+id/user_info_layout"
+        android:layout_width="950dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 卡号 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/card_id"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <!-- 要求 : 18个ASCII码 -->
+
+                <EditText
+                    android:id="@+id/card_id_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_name_input"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="18"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <!-- 性别 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/gender"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/sex_textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_spinner_user_info_bg"
+                    android:gravity="center_vertical"
+                    android:text="请选择"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <!-- 文化程度 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/education"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/education_textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_spinner_user_info_bg"
+                    android:gravity="center_vertical"
+                    android:text="请选择"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <!-- 职业 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/profession"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/job_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_name_input"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <!-- 所属地区 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/region"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/area_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_name_input"
+                    android:focusable="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <!-- 您属于哪里人 -->
+
+            <LinearLayout
+                android:id="@+id/residential_area_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="总体而言，您属于："
+                    android:textColor="@color/TextNormal"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/residential_area_textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_spinner_user_info_bg"
+                    android:gravity="center_vertical"
+                    android:text="请选择"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!-- 第几次评定 -->
+
+            <LinearLayout
+                android:id="@+id/number_of_test_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="第几次评定"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/number_of_test_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_name_input"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 姓名 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/name"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/name_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_name_input"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:text="张三"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+            <!-- 年龄 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/age"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/age_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_name_input"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:text="33"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+            <!-- 婚姻状况 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/marital"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/marital_textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_spinner_user_info_bg"
+                    android:gravity="center_vertical"
+                    android:text="请选择"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <!-- 常模选择 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/norm"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/changmo_textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_spinner_user_info_bg"
+                    android:gravity="center_vertical"
+                    android:text="请选择"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <!-- 评定时间范围 -->
+
+            <LinearLayout
+                android:id="@+id/assessment_time_range_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="评定时间范围:"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/assessment_time_range_textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_spinner_user_info_bg"
+                    android:gravity="center_vertical"
+                    android:text="请选择"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <!-- 其他 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/other"
+                    android:textColor="@color/TextNormal"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/other_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_name_input"
+                    android:ellipsize="end"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 网络信息展示区域 -->
+
+    <include
+        android:id="@+id/net_info_with_wifi_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_info_layout"
+        android:layout_marginTop="10dp"
+        layout="@layout/net_info_with_wifi_layout"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

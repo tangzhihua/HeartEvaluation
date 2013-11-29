@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_start" >
+
+    <!-- 用户登录状态 -->
+
+    <TextView
+        android:id="@+id/user_login_state_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/user_login_state_test"
+        android:textColor="#FF00FF"
+        android:textSize="24sp" />
+
+    <!-- 网络信息展示区域 -->
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/net_info_layout"
+        android:background="@android:color/white" />
+
+    <!-- 界面跳转按钮区域 -->
+
+    <RelativeLayout
+        android:id="@+id/function_option_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="90dp" >
+
+        <!-- 开始测试 -->
+
+        <Button
+            android:id="@+id/start_test_button"
+            android:layout_width="260dp"
+            android:layout_height="280dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector_start_test_button_bg" />
+
+        <!-- 继续未完成 -->
+
+        <Button
+            android:id="@+id/continue_test_button"
+            android:layout_width="170dp"
+            android:layout_height="175dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/start_test_button"
+            android:background="@drawable/selector_continue_test_button_bg" />
+
+        <!-- 系统设置 -->
+
+        <Button
+            android:id="@+id/system_setting_button"
+            android:layout_width="170dp"
+            android:layout_height="95dp"
+            android:layout_below="@id/continue_test_button"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/start_test_button"
+            android:background="@drawable/selector_system_setting_button_bg" />
+    </RelativeLayout>
+
+    <!-- 退出应用程序按钮 -->
+
+    <Button
+        android:id="@+id/quit_Button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_quit_button_bg" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/net_info_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/servicer_ip_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="服务器IP:00.00.00.00(测试)"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/device_number_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="本机编号:00000(测试)"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/device_ip_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:text="本机IP:00.00.00.00(测试)"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+</LinearLayout>
